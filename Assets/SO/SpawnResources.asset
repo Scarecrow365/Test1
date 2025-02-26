@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4e00dd2a1f4468ac32deb897ab7361, type: 3}
+  m_Name: SpawnResources
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 5984041310882622958, guid: 8eb40c289c3883946a07d28ecb94cd46, type: 3}
+  coalPrefab: {fileID: 3110487536898851630, guid: e677b429d3c1eb149b778c4d5b4dbc6d, type: 3}
+  chickenWingPrefab: {fileID: 929774421014157142, guid: ab056288abf8e104cb0fdb9c721157bd, type: 3}
