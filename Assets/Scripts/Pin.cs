@@ -4,8 +4,8 @@ using UnityEngine;
 public class Pin : MonoBehaviour, IInputHandler
 {
     [Header("Tutorial Settings")] 
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private SpriteRenderer glow;
+    [SerializeField] private GameObject spriteRenderer;
+    [SerializeField] private GameObject glow;
     [SerializeField, Range(0, 2)] private float directionMultiply = 0.2f;
     [SerializeField, Range(0, 2)] private float moveDirectionDuration = 1.5f;
 
@@ -49,15 +49,16 @@ public class Pin : MonoBehaviour, IInputHandler
     private void Select()
     {
         glowTween?.Complete();
-        glowTween = glow.DOFade(0, 0);
         glow.gameObject.SetActive(true);
-        glow.DOFade(1, 0.2f);
+        // glowTween = glow.DOFade(0, 0);
+        // glow.DOFade(1, 0.2f);
     }
 
     private void Deselect()
     {
         glowTween?.Complete();
-        glow.DOFade(0, 0.2f)
-            .OnComplete(() => glow.gameObject.SetActive(false));
+        // glow.DOFade(0, 0.2f)
+        //     .OnComplete(() => glow.gameObject.SetActive(false));
+        glow.gameObject.SetActive(false);
     }
 }
